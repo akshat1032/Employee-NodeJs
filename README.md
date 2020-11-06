@@ -7,3 +7,5 @@
 ###### UC_2 Calculating employee wage based on full time or part time work
 
 ###### UC_3 Refactor to use function to get working hours for calculating employee wage
+
+###### UC_4 Calculating monthly employee wage when maximum working days is 20

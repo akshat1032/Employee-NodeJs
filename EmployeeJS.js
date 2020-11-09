@@ -10,7 +10,7 @@
     }
 }
 
-//  UC_5 Calculating monthly employee wage based on part time or full time work and max working hours or days
+//  UC_6 Storing the daily wage alongwith total wage
 {
     const IS_PART_TIME = 0;
     const IS_FULL_TIME = 1;
@@ -19,6 +19,9 @@
     const WAGE_PER_HOUR = 20;
     const NO_OF_WORKING_DAYS = 20;
     const MAX_HOURS_MONTHLY = 100;
+    let employeeDailyWage = new Array();
+
+    // Get working hours
     function getWorkingHours(employeeCheck) {
         switch (employeeCheck) {
             case IS_PART_TIME:
@@ -27,13 +30,20 @@
                 return FULL_TIME_HOURS;
         }
     }
+
+    // Get wage depending on hours
+    function getWage(workingHours) {
+        return workingHours * WAGE_PER_HOUR;
+    }
     let employeeHours = 0;
     let employeeWorkingDays = 0;
-    while(employeeHours<= MAX_HOURS_MONTHLY && employeeWorkingDays <=NO_OF_WORKING_DAYS){
+    while (employeeHours <= MAX_HOURS_MONTHLY && employeeWorkingDays <= NO_OF_WORKING_DAYS) {
         employeeWorkingDays++;
         let employeeCheck = Math.floor(Math.random() * 10) % 2;
-        employeeHours += getWorkingHours(employeeCheck);
+        let employeeWorkingHours = getWorkingHours(employeeCheck);
+        employeeHours += employeeWorkingHours;
+        employeeDailyWage.push(getWage(employeeWorkingHours));
     }
-        let employeeWage = employeeHours * WAGE_PER_HOUR;
-        console.log("Total Working Days : "+employeeWorkingDays+"\nTotal Working Hours : "+employeeHours+" \nEmployee wage : $" + employeeWage);
-    }
+    let employeeWage = getWage(employeeHours);
+    console.log("Total Working Days : " + employeeWorkingDays + "\nTotal Working Hours : " + employeeHours + " \nEmployee wage : $" + employeeWage);
+}

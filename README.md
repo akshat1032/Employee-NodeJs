@@ -11,3 +11,5 @@
 ###### UC_4 Calculating monthly employee wage when maximum working days is 20
 
 ###### UC_5 Calculating wage for employee till maximum 20 days or 160 hours of work is reached
+
+###### UC_6 Storing the daily wage alongwith total wage

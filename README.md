@@ -22,3 +22,5 @@
 ###### E Check if every element of full time wage is holding full time wage
 ###### F Check if there is any part time wage
 ###### G Find the number of days employee worked
+
+###### UC_8 Storing the day and daily wage alongwith total wage

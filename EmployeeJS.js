@@ -10,7 +10,7 @@
     }
 }
 
-//  UC_6 Storing the daily wage alongwith total wage
+//  UC_8 Storing the day and daily wage alongwith total wage
 {
     const IS_PART_TIME = 0;
     const IS_FULL_TIME = 1;
@@ -20,6 +20,7 @@
     const NO_OF_WORKING_DAYS = 20;
     const MAX_HOURS_MONTHLY = 100;
     var employeeDailyWage = new Array();
+    var employeeDailyWageMap = new Map();
 
     // Get working hours
     function getWorkingHours(employeeCheck) {
@@ -43,9 +44,11 @@
         let employeeWorkingHours = getWorkingHours(employeeCheck);
         employeeHours += employeeWorkingHours;
         employeeDailyWage.push(getWage(employeeWorkingHours));
+        employeeDailyWageMap.set(employeeWorkingDays,getWage(employeeWorkingHours));
     }
     let employeeWage = getWage(employeeHours);
     console.log("Total Working Days : " + employeeWorkingDays + "\nTotal Working Hours : " + employeeHours + " \nEmployee wage : $" + employeeWage);
+    console.log(employeeDailyWageMap);
 }
 
 // UC_7A Calculating total wage using foreach traversal or reduce

@@ -28,3 +28,9 @@
 ###### UC_9 Performing operations using arrow functions
 
 ###### UC_10 Ability to store the Day, Hours Worked and Wage Earned in a single object.
+
+###### UC_11 Performing object operations using arrow functions
+###### A Calculate total wage and total hours worked
+###### B Show the full workings days using foreach
+###### C Show Part working days using Map by reducing to String Array
+###### D No working days only using Map function

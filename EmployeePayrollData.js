@@ -36,13 +36,13 @@ class EmployeePayroll {
     }
 }
 
-let employeePayRollData = new EmployeePayRollData(1, "Mark", 30000);
-console.log(employeePayRollData.toString());
+let employeePayroll = new EmployeePayroll(1, "Mark", 30000);
+console.log(employeePayroll.toString());
 try {
-    employeePayRollData.name = "john";
-    console.log(employeePayRollData.toString());
+    employeePayroll.name = "john";
+    console.log(employeePayroll.toString());
 } catch (e) {
     console.error(e);
 }
-let newEmployeePayRollData = new EmployeePayRollData(1, "Terissa", 30000, "F", new Date());
-console.log(newEmployeePayRollData.toString());
+let newEmployeePayroll = new EmployeePayroll(1, "Terissa", 30000, "F", new Date());
+console.log(newEmployeePayroll.toString());

@@ -24,3 +24,5 @@
 ###### G Find the number of days employee worked
 
 ###### UC_8 Storing the day and daily wage alongwith total wage
+
+###### UC_9 Performing operations using arrow functions

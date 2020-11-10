@@ -34,3 +34,5 @@
 ###### B Show the full workings days using foreach
 ###### C Show Part working days using Map by reducing to String Array
 ###### D No working days only using Map function
+
+###### UC_12 Create employee payroll data with fields

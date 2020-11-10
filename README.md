@@ -26,3 +26,5 @@
 ###### UC_8 Storing the day and daily wage alongwith total wage
 
 ###### UC_9 Performing operations using arrow functions
+
+###### UC_10 Ability to store the Day, Hours Worked and Wage Earned in a single object.

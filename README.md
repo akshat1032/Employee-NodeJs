@@ -36,3 +36,7 @@
 ###### D No working days only using Map function
 
 ###### UC_12 Create employee payroll data with fields
+
+###### UC_13 Extend employee payroll to add gender and start date
+
+###### UC_14 Check for valid name using Regex
